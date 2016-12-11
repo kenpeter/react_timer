@@ -1,4 +1,3 @@
-var ReactDOM = require('react-dom');
 var React = require('react');
 
 var Timer = React.createClass({
@@ -104,7 +103,11 @@ var Timer = React.createClass({
     // Although we return an entire <p> element, react will smartly update
     // only the changed parts, which contain the seconds variable.
 
-    return <p>This example was started <b>{seconds} seconds</b> ago.</p>;
+    return (
+      <div>
+        <p>This example was started <b>{seconds} seconds</b> ago.</p>
+      </div>
+    );
   }
 });
 

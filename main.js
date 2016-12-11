@@ -7,7 +7,7 @@ var ReactDOM = require('react-dom');
 // ./
 // components
 // App
-var Timer = require('./components/Timer.js');
+var App = require('./components/Container.js');
 
 // react
 // dom
@@ -20,6 +20,6 @@ var Timer = require('./components/Timer.js');
 // get element by id
 // main
 ReactDOM.render(
-  <Timer start={Date.now()} />,
+  <App />,
   document.getElementById('main')
 );
